@@ -44,73 +44,72 @@ $questions = array(
 );
 ?>
 
-<form>
-    <label><?= array_keys($questions)[0] ?> :</label>
-    <br>
-    <?php
-    foreach ($questions['first'] as $key => $value): ?>
-        <?php
-        if ($value === true): ?>
-            <input type="radio" value="<?= $key ?>">
-            <label for="<?= $key ?>" style="color: green;"><?= $key ?></label><br>
-        <?php
-        else: ?>
-            <input type="radio" value="<?= $key ?>">
-            <label for="<?= $key ?>"><?= $key ?></label><br>
-        <?php
-        endif; ?>
-    <?php
-    endforeach; ?>
 
-    <label><?= array_keys($questions)[1] ?> :</label>
-    <br>
-    <?php
-    foreach ($questions['second'] as $key => $value): ?>
-        <?php
-        if ($value === true): ?>
-            <input type="checkbox" value="<?= $key ?>">
-            <label for="<?= $key ?>" style="color: green;"><?= $key ?></label><br>
-        <?php
-        else: ?>
-            <input type="checkbox" value="<?= $key ?>">
-            <label for="<?= $key ?>"><?= $key ?></label><br>
-        <?php
-        endif; ?>
-    <?php
-    endforeach; ?>
+<p><?= array_keys($questions)[0] ?> :</p>
 
-    <label><?= array_keys($questions)[2] ?> :</label>
-    <br>
+<?php
+foreach ($questions['first'] as $key => $value): ?>
     <?php
-    foreach ($questions['third'] as $key => $value): ?>
-        <?php
-        if ($value === true): ?>
-            <input type="checkbox" value="<?= $key ?>">
-            <label for="<?= $key ?>" style="color: green;"><?= $key ?></label><br>
-        <?php
-        else: ?>
-            <input type="checkbox" value="<?= $key ?>">
-            <label for="<?= $key ?>"><?= $key ?></label><br>
-        <?php
-        endif; ?>
+    if ($value === true): ?>
+        <input type="radio" value="<?= $key ?>">
+        <label for="<?= $key ?>" style="color: green;"><?= $key ?></label><br>
     <?php
-    endforeach; ?>
+    else: ?>
+        <input type="radio" value="<?= $key ?>">
+        <label for="<?= $key ?>"><?= $key ?></label><br>
+    <?php
+    endif; ?>
+<?php
+endforeach; ?>
+
+<p><?= array_keys($questions)[1] ?> :</p>
+<?php
+foreach ($questions['second'] as $key => $value): ?>
+    <?php
+    if ($value === true): ?>
+        <input type="checkbox" value="<?= $key ?>">
+        <label for="<?= $key ?>" style="color: green;"><?= $key ?></label><br>
+    <?php
+    else: ?>
+        <input type="checkbox" value="<?= $key ?>">
+        <label for="<?= $key ?>"><?= $key ?></label><br>
+    <?php
+    endif; ?>
+<?php
+endforeach; ?>
+
+<p><?= array_keys($questions)[2] ?> :</p>
+<?php
+foreach ($questions['third'] as $key => $value): ?>
+    <?php
+    if ($value === true): ?>
+        <input type="checkbox" value="<?= $key ?>">
+        <label for="<?= $key ?>" style="color: green;"><?= $key ?></label><br>
+    <?php
+    else: ?>
+        <input type="checkbox" value="<?= $key ?>">
+        <label for="<?= $key ?>"><?= $key ?></label><br>
+    <?php
+    endif; ?>
+<?php
+endforeach; ?>
 
 
-    <br>
-    <label><?= array_keys($questions)[3] ?> :</label>
-    <input type="text" placeholder="<?= $questions['fourth'] ?>">
-    <br>
+<br>
+<label><?= array_keys($questions)[3] ?> :</label>
+<input type="text" placeholder="<?= $questions['fourth'] ?>">
+<br>
 
-    <br>
-    <label><?= array_keys($questions)[4] ?> :</label>
-    <input type="text" placeholder="<?= $questions['fifth'] ?>">
-    <br>
+<br>
+<label><?= array_keys($questions)[4] ?> :</label>
+<input type="text" placeholder="<?= $questions['fifth'] ?>">
+<br>
 
-    <br>
-    <label><?= array_keys($questions)[5] ?> :</label>
-    <input type="text" placeholder="<?= $questions['sixth'] ?>">
-</form>
+<br>
+<label><?= array_keys($questions)[5] ?> :</label>
+<input type="text" placeholder="<?= $questions['sixth'] ?>">
+
+<br>
 <?php
 $tag = 'Hello';
 $background_color_blue = 'blue';
