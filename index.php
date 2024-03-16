@@ -80,8 +80,7 @@ endforeach; ?>
 
 <p><?= array_keys($questions)[2] ?> :</p>
 <?php
-foreach ($questions['third'] as $key => $value): ?>
-    <?php
+foreach ($questions['third'] as $key => $value):
     if ($value === true): ?>
         <input type="checkbox" value="<?= $key ?>">
         <label for="<?= $key ?>" style="color: green;"><?= $key ?></label><br>
@@ -96,17 +95,17 @@ endforeach; ?>
 
 
 <br>
-<label><?= array_keys($questions)[3] ?> :</label>
+<p><?= array_keys($questions)[3] ?> :</p>
 <input type="text" placeholder="<?= $questions['fourth'] ?>">
 <br>
 
 <br>
-<label><?= array_keys($questions)[4] ?> :</label>
+<p><?= array_keys($questions)[4] ?> :</p>
 <input type="text" placeholder="<?= $questions['fifth'] ?>">
 <br>
 
 <br>
-<label><?= array_keys($questions)[5] ?> :</label>
+<p><?= array_keys($questions)[5] ?> :</p>
 <input type="text" placeholder="<?= $questions['sixth'] ?>">
 
 <br>
